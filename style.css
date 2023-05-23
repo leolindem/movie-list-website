@@ -1,13 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+
 body {
     background-color: #121212;
-    color : white;
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&display=swap');
+
+h1.title {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #6CC417;
+}
+
+
 .movie-title {
-    color : #6CC417;
-    width: 50%;
+    color: #6CC417;
+    width: fit-content;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .center {
@@ -16,14 +32,15 @@ body {
     text-align: center;
 }
 
-table {
-    
-    border-collapse: collapse;
-    width: 50%;
-    margin-bottom: 50px;
+h2.section-title {
+    color: white;
+    text-align: center;
+    font-size: 42px;
+
 }
 
-td, th {
+td,
+th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 8px;
@@ -31,4 +48,44 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #292929;
+}
+
+.title {
+    font-size: 32px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.table-container {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#movie-table,
+#series-table {
+    width: auto;
+    margin: 0 auto;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#movie-table th,
+#series-table th {
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#movie-table td,
+#series-table td {
+    padding: 10px 20px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
 }
